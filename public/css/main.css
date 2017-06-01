@@ -1,0 +1,74 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #585451; }
+
+a {
+  text-decoration: none;
+  color: #585451; }
+
+em {
+  color: #da3970; }
+
+.right {
+  float: right; }
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25em; }
+
+.wrapper {
+  max-width: 1040px;
+  width: 100%;
+  margin: auto; }
+  .wrapper .inner-wrapper {
+    padding: 0 20px; }
+
+.clear {
+  float: none !important;
+  clear: both !important; }
+
+.nav {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 0; }
+  .nav .wrapper {
+    height: 100%; }
+    .nav .wrapper .inner-wrapper {
+      height: 100%; }
+      .nav .wrapper .inner-wrapper > div {
+        height: 100%;
+        float: left; }
+      .nav .wrapper .inner-wrapper .options {
+        float: right; }
+        .nav .wrapper .inner-wrapper .options:after {
+          clear: both; }
+        .nav .wrapper .inner-wrapper .options > div {
+          display: inline-block; }
+        .nav .wrapper .inner-wrapper .options .account {
+          font-size: 0.688em;
+          margin-right: 30px; }
+  .nav a {
+    color: #FFF; }
+  .nav input {
+    padding: 5px 2px; }
+
+.main .teaser {
+  padding: 20px 0 30px 0; }
+
+.main .menu {
+  border-bottom: solid 5px #f0edeb;
+  padding-bottom: 20px; }
+  .main .menu a {
+    text-transform: uppercase;
+    margin-right: 15px; }
+    .main .menu a.show-room {
+      margin-right: 0; }
+
+@media screen and (min-width: 481px) {
+  .mobile {
+    display: none !important; } }
+
+@media screen and (max-width: 480px) {
+  .mobile {
+    display: block; } }

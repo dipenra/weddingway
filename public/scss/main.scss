@@ -1,0 +1,104 @@
+$font-global: 'Open Sans', sans-serif;
+$font-header: 'Raleway', sans-serif;
+
+body {
+    font-family: $font-global;
+    font-size: 16px;
+    color: #585451;
+}
+
+a {
+    text-decoration: none;
+    color: #585451;
+}
+
+em {
+    color: #da3970;
+}
+
+.right {
+    float: right;
+}
+
+.logo {
+    font-family: $font-header;
+    font-size: 1.25em;
+}
+
+.wrapper {
+    max-width: 1040px;
+    width: 100%;
+    margin: auto;
+    .inner-wrapper {
+        padding: 0 20px;
+    }
+}
+
+.clear {
+    float: none !important;
+    clear: both !important;     
+}
+    
+.nav {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+    .wrapper {
+        height: 100%;
+        .inner-wrapper {
+            height: 100%;
+            > div {
+                height: 100%;
+                float: left;
+            }
+            .options {
+                float: right;
+                &:after {
+                    clear: both;
+                }
+                > div {
+                    display: inline-block;
+                }
+                .account {
+                    font-size: 0.688em;
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+    a {
+        color: #FFF;
+    }
+    input {
+        padding: 5px 2px;
+    }
+}
+
+.main {
+    .teaser {
+        padding: 20px 0 30px 0; 
+    }
+    .menu {
+        border-bottom: solid 5px #f0edeb;
+        padding-bottom: 20px;
+        a {
+            text-transform: uppercase;
+            margin-right: 15px;
+            &.show-room {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .mobile { 
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mobile { 
+        display: block;
+    }
+}
