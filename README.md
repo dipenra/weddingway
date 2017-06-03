@@ -12,6 +12,8 @@ Requirements:
   - https://gruntjs.com/getting-started
   
 Running the App
+- $git clone git@github.com:dipenra/weddingway.git weddingway
+- $cd weddingway
 - $npm install
 - $node server
 
