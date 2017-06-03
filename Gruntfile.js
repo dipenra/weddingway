@@ -4,7 +4,8 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'public/css/main.css': 'public/scss/main.scss',
-          'public/css/reset.css': 'public/scss/reset.scss'
+          'public/css/reset.css': 'public/scss/reset.scss',
+          'public/css/font-awesome.css': 'public/scss/font-awesome.scss'
         }
       }
     },
@@ -15,7 +16,7 @@ module.exports = function(grunt) {
       },
       target: {
         files: {
-          'public/css/default.min.css': ['public/css/reset.css', 'public/css/main.css']
+          'public/css/default.min.css': ['public/css/reset.css', 'public/css/font-awesome.css', 'public/css/main.css']
         }
       }
     },
