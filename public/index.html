@@ -5,24 +5,25 @@
         <link href="/css/default.min.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="nav">
             <div class="wrapper">
                 <div class="inner-wrapper">
-                    <div class="hambuger-menu mobile">MICON</div>
+                    <div class="ham-menu -tablet"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
                     <div class="logo">&bull; WEDDINGTON WAY &bull;</div>
                     <div class="options">
-                        <div class="account">
+                        <div class="account -desktop">
                             <a href="#">LOGIN</a>/
                             <a href="#">SIGNUP</a>
                         </div>
-                        <div class="search">
+                        <div class="search -desktop">
                             <div class="input">
                                 <input placeholder="Search products">
                             </div>
                         </div>
-                        <div class="settings mobile">SICON</div>
+                        <div class="settings -tablet"><a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a></div>
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -31,13 +32,13 @@
         <div class="main wrapper">
             <div class="inner-wrapper">
                 <!-- teaser -->
-                <div class="teaser">
+                <div class="teaser -desktop">
                     <p>Free US Shipping on orders over $150*</p>
                 </div>
                 <!-- /teaser -->
                 
                 <!-- menu -->
-                <div class="menu">
+                <div class="menu -desktop">
                     <a href="#">Bridesmaids</a>
                     <a href="#">Brides</a>
                     <a href="#">Wedding Party</a>
@@ -49,14 +50,21 @@
                 
                 <!-- hero -->
                 <div class="hero">
-                    <h1>Designed by us. Inspired by you.</h1>
-                    <p>We designed 25 dresses that break the mold in bridesmaid fit, style, and comfort</p>
-                    <a href="#" class="button-black">Shop our exculsive collection</a>
+                    <h1><span class="design">Designed by us.</span> <span class="inspire">Inspired by you.</span></h1>
+                    <p class="-desktop">We designed 25 dresses that break the mold in bridesmaid fit, style, and comfort</p>
+                    <a href="#" class="button-black -desktop">Shop our exculsive collection</a>
                 </div>
                 <!-- /hero -->
                 
+                <!-- cta-message (mobile) -->
+                <div class="cta-message -mobile">
+                    <p>We designed 25 dresses that break the mold in fit, style & comfort.</p>
+                    <a href="#" class="button-pink">Shop our exculsive dresses</a>
+                </div>
+                <!-- /cta-message (mobile) -->
+                
                 <!-- benifits -->
-                <div class="benifits">
+                <div class="benifits -desktop">
                     <div>
                         <h3>A perfect match</h3>
                         <p>for every maid.</p>
@@ -91,14 +99,16 @@
                             </ul>
                         </div>
                     </div>
+                    <p><a href="#">see all the styles</a></p>
                 </div>
                 <!-- /slider -->
                 
                 <!-- featured looks -->
                 <div class="featured-looks">
                     <h2>Featured Looks</h2>
-                    <p>Check out our favorite ways to mix and match these dresses!</p>
-                    <div class="featured-wrapper">
+                    <p class="-desktop">Check out our favorite ways to mix and match these dresses!</p>
+                    <p class="-mobile">Get inspired with mix & match styles.</p>
+                    <div class="featured-wrapper -desktop-large">
                         <div class="featured-inner-wrapper">
                             <div class="now-neutrals">
                                 <a href="#now-neutrals" class="h-link">Now Neutrals</a>
@@ -121,26 +131,48 @@
                 </div>
                 
                 <!-- featured now-neutrals -->
+                <div class="featured-m-wrapper -mobile">
+                    <div class="image-wrapper">
+                        <img src="/images/ww-now-4.png" alt="" />
+                    </div>
+                </div>
                 <div class="featured-container now-neutrals" id="now-neutrals">
                     <h3>Now Neutrals</h3>
-                    <p class="sub-header">Nothing says chic like a palette of neutral shades. Let each bridesmaid choose 
+                    <p class="sub-header -desktop">Nothing says chic like a palette of neutral shades. Let each bridesmaid choose 
                     the tone that suits her best, and don't be afraid to add some sparkle.</p>
-                    <div class="row">
-                        <div class="c-4-2"><img src="/images/ww-now-1.png" alt="" /></div>
+                    <p class="sub-header -mobile">Nothing says chic like a palette of neutral shades.</p>
+                    <div class="row row-mobile -mobile">
+                        <div class="c-2-1">
+                            <div class="img-wrapper pad-right"><img src="/images/ww-now-2.png" alt="" /></div>
+                        </div>
+                        <div class="c-2-1">
+                            <div class="img-wrapper pad-left"><img src="/images/ww-now-6.png" alt="" /></div>
+                        </div>
+                    </div>
+                    <div class="row first -desktop">
+                        <div class="c-4-2">
+                            <div class="img-wrapper"><img src="/images/ww-now-1.png" alt="" /></div>
+                        </div>
                         <div class="c-4-1">
                             <div class="quote">
                                 <blockquote>I didn't feel just a bridesmaid... I felt timelessly chic and utterly classic.</blockquote>
                                 <div class="cite">Caroline Acree</div>
                             </div>
                         </div>
-                        <div class="c-4-1 align-right"><img src="/images/ww-now-2.png" alt="" /></div>
+                        <div class="c-4-1">
+                            <div class="img-wrapper last"><img src="/images/ww-now-2.png" alt="" /></div>
+                        </div>
                     </div>
-                    <div class="row margin-top-20">
-                        <div class="c-3-1"><img src="/images/ww-now-3.png" alt="" /></div>
-                        <div class="c-3-2 align-right"><img src="/images/ww-now-4.png" alt="" /></div>
+                    <div class="row second margin-top-20 -desktop">
+                        <div class="c-3-1">
+                            <div class="img-wrapper"><img src="/images/ww-now-3.png" alt="" /></div>
+                        </div>
+                        <div class="c-3-2">
+                            <div class="img-wrapper last"><img src="/images/ww-now-4.png" alt="" /></div>
+                        </div>
                     </div>
                     <div class="samples margin-top-20">
-                        <p class="title">Get the look:</p>
+                        <p class="title -desktop">Get the look:</p>
                         <div class="samples-wrapper">
                             <ul>
                                 <li>
@@ -202,33 +234,59 @@
                         </div>
                         
                         <div class="cta-wrapper margin-top-20">
-                            <a href="#" class="button-pink">Save this line-up</a>
+                            <a href="#" class="button-pink -desktop">Save this line-up</a>
+                            <a href="#" class="button-pink -mobile">Save these dresses</a>
                         </div>
                     </div>
                 </div>
                 <!-- /featured now-neutrals -->
                 
                 <!-- featured perfect-pair -->
+                <div class="spacer -mobile"></div>
+                <div class="featured-m-wrapper -mobile">
+                    <div class="image-wrapper">
+                        <img src="/images/ww-perfect-4.png" alt="" />
+                    </div>
+                </div>
                 <div class="featured-container perfect-pair margin-top-50" id="perfect-pair">
                     <h3>Perfect Pair</h3>
-                    <p class="sub-header">For a playful pop of color, pick two complimentary shades for your bridal party.  Two tones are twice as nice!</p>
-                    <div class="row first">
-                        <div class="c-4-1"><img src="/images/ww-perfect-1.png" alt="" /></div>
+                    <p class="sub-header -desktop">For a playful pop of color, pick two complimentary shades for your bridal party.  Two tones are twice as nice!</p>
+                    <p class="sub-header -mobile">For a playful pop of color, pick two complimentary colors.</p>
+                    <div class="row row-mobile -mobile">
+                        <div class="c-2-1">
+                            <div class="img-wrapper pad-right"><img src="/images/ww-perfect-1.png" alt="" /></div>
+                        </div>
+                        <div class="c-2-1">
+                            <div class="img-wrapper pad-left"><img src="/images/ww-perfect-2.png" alt="" /></div>
+                        </div>
+                    </div>
+                    <div class="row first -desktop">
+                        <div class="c-4-1">
+                            <div class="img-wrapper"><img src="/images/ww-perfect-1.png" alt="" /></div>
+                        </div>
                         <div class="c-4-1">
                             <div class="tip">
                                 <em>Stylist Tip</em>
                                 <p>Let each bridesmaid choose a color and fabric that truly compliments her indivdual style and complexion.</p>
                             </div>
                         </div>
-                        <div class="c-4-1"><img src="/images/ww-perfect-2.png" alt="" /></div>
-                        <div class="c-4-1 align-right"><img src="/images/ww-perfect-3.png" alt="" /></div>
+                        <div class="c-4-1">
+                            <div class="img-wrapper"><img src="/images/ww-perfect-2.png" alt="" /></div>
+                        </div>
+                        <div class="c-4-1">
+                            <div class="img-wrapper last"><img src="/images/ww-perfect-3.png" alt="" /></div>
+                        </div>
                     </div>
-                    <div class="row second margin-top-20">
-                        <div class="c-3-2"><img src="/images/ww-perfect-4.png" alt="" /></div>
-                        <div class="c-3-1 align-right"><img src="/images/ww-perfect-5.png" alt="" /></div>
+                    <div class="row second margin-top-20 -desktop">
+                        <div class="c-3-2">
+                            <div class="img-wrapper"><img src="/images/ww-perfect-4.png" alt="" /></div>
+                        </div>
+                        <div class="c-3-1">
+                            <div class="img-wrapper last"><img src="/images/ww-perfect-5.png" alt="" /></div>
+                        </div>
                     </div>
                     <div class="samples margin-top-20">
-                        <p class="title">Get the look:</p>
+                        <p class="title -desktop">Get the look:</p>
                         <div class="samples-wrapper">
                             <ul>
                                 <li>
@@ -290,33 +348,59 @@
                         </div>
                         
                         <div class="cta-wrapper margin-top-20">
-                            <a href="#" class="button-pink">Save this line-up</a>
+                            <a href="#" class="button-pink -desktop">Save this line-up</a>
+                            <a href="#" class="button-pink -mobile">Save these dresses</a>
                         </div>
                     </div>
                 </div>
                 <!-- /featured perfect-pair -->
                 
                 <!-- featured gold-rush -->
+                <div class="spacer -mobile"></div>
+                <div class="featured-m-wrapper -mobile">
+                    <div class="image-wrapper">
+                        <img src="/images/ww-gold-5.png" alt="" />
+                    </div>
+                </div>
                 <div class="featured-container gold-rush margin-top-50" id="gold-rush">
                     <h3>Gold rush</h3>
-                    <p class="sub-header">Universally flattering, feminine, and fun, this elegant metallic is having a Midas moment.</p>
-                    <div class="row first">
-                        <div class="c-4-1"><img src="/images/ww-gold-1.png" alt="" /></div>
-                        <div class="c-4-1"><img src="/images/ww-gold-2.png" alt="" /></div>
+                    <p class="sub-header -desktop">Universally flattering, feminine, and fun, this elegant metallic is having a Midas moment.</p>
+                    <p class="sub-header -mobile">Universally flattering, feminine and fun, gold is having a Midas moment.</p>
+                    <div class="row row-mobile -mobile">
+                        <div class="c-2-1">
+                            <div class="img-wrapper pad-right"><img src="/images/ww-gold-1.png" alt="" /></div>
+                        </div>
+                        <div class="c-2-1">
+                            <div class="img-wrapper pad-left"><img src="/images/ww-gold-3.png" alt="" /></div>
+                        </div>
+                    </div>
+                    <div class="row first -desktop">
+                        <div class="c-4-1">
+                            <div class="img-wrapper"><img src="/images/ww-gold-1.png" alt="" /></div>
+                        </div>
+                        <div class="c-4-1">
+                            <div class="img-wrapper"><img src="/images/ww-gold-2.png" alt="" /></div>
+                        </div>
                         <div class="c-4-1">
                             <div class="tip">
                                 <em>Stylist Watch</em>
                                 <p>This Spring, all that glitters is gold. Trendset in this precious metal.</p>
                             </div>
                         </div>
-                        <div class="c-4-1 align-right"><img src="/images/ww-gold-3.png" alt="" /></div>
+                        <div class="c-4-1">
+                            <div class="img-wrapper last"><img src="/images/ww-gold-3.png" alt="" /></div>
+                        </div>
                     </div>
-                    <div class="row second margin-top-20">
-                        <div class="c-3-1"><img src="/images/ww-gold-4.png" alt="" /></div>
-                        <div class="c-3-2 align-right"><img src="/images/ww-gold-5.png" alt="" /></div>
+                    <div class="row second margin-top-20 -desktop">
+                        <div class="c-3-1">
+                            <div class="img-wrapper"><img src="/images/ww-gold-4.png" alt="" /></div>
+                        </div>
+                        <div class="c-3-2">
+                            <div class="img-wrapper last"><img src="/images/ww-gold-5.png" alt="" /></div>
+                        </div>
                     </div>
                     <div class="samples margin-top-20">
-                        <p class="title">Get the look:</p>
+                        <p class="title -desktop">Get the look:</p>
                         <div class="samples-wrapper">
                             <ul>
                                 <li>
@@ -377,7 +461,7 @@
                             </ul>
                         </div>
                         
-                        <div class="cta-wrapper margin-top-20">
+                        <div class="cta-wrapper margin-top-20 -desktop">
                             <a href="#" class="button-pink">Save this line-up</a>
                         </div>
                     </div>
@@ -385,7 +469,7 @@
                 <!-- /featured gold-rush -->
                 
                 <!-- featured models -->
-                <div class="featured-models">
+                <div class="featured-models -desktop-large">
                     <div class="header"><h3>Our Nashville Models</h3></div>
                     <div class="models margin-top-50">
                          <ul>
@@ -431,7 +515,7 @@
                 <!-- /featured models -->
                 
                 <!-- footer -->
-                <div class="footer">
+                <div class="footer -desktop-large">
                     <p>see the full selection of styles and colors</p>
                     <a href="#" class="button-black">Shop OUr Exclusive Collection</a>
                 </div>
