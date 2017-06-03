@@ -16,6 +16,7 @@ Running the App
 - $cd weddingway
 - $npm install
 - $node server
+- In browser: http://localhost:3000
 
 Optional
 - grunt build
